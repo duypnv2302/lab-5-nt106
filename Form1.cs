@@ -66,7 +66,7 @@ namespace lab_5_nt106
         {
             if (txtEmailFrom.Text == string.Empty || txtEmailTo.Text == string.Empty)
             {
-                MessageBox.Show("Nhập đủ mail người nhận và người gửi!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Nhập đủ email người nhận và người gửi!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (txtPass.Text == string.Empty)
             {
@@ -74,7 +74,7 @@ namespace lab_5_nt106
             }
             else
             {
-                if ((txtEmailFrom.Text == "duyphan@nhom02.nt106" || txtEmailFrom.Text == "phongkhuu@nhom2.nt106" || txtEmailFrom.Text == "tienvi@nhom2.nt106" || txtEmailFrom.Text == "anhnguyen@nhom2.nt106")
+                if ((txtEmailFrom.Text == "duyphan@nhom02.nt106" || txtEmailFrom.Text == "phongkhuu@nhom2.nt106" || txtEmailFrom.Text == "tienvi@nhom2.nt106" || txtEmailFrom.Text == "anhnguyen@nhom2.nt106") 
                     && (txtEmailTo.Text == "duyphan@nhom02.nt106" || txtEmailTo.Text == "phongkhuu@nhom2.nt106" || txtEmailTo.Text == "tienvi@nhom2.nt106" || txtEmailTo.Text == "anhnguyen@nhom2.nt106")
                     && txtPass.Text == "Hello12345!")
                 {

@@ -27,14 +27,14 @@ namespace lab_5_nt106
             listShow.View = View.Details;
             txtPass.Clear();
             txtPass.PasswordChar = '*';
-            txtPass.MaxLength = 8;
+            txtPass.MaxLength = 15;
         }
 
         void ReadMail()
         {
             try
             {
-                using (var client = new ImapClient())
+                using (ImapClient client = new ImapClient())
                 {
                     client.ServerCertificateValidationCallback = (s, c, h, e) => true;
                     client.Connect("localhost", 993, true);
