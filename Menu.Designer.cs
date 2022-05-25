@@ -61,6 +61,7 @@
             this.btnAppMail.TabIndex = 0;
             this.btnAppMail.Text = "App Mail";
             this.btnAppMail.UseVisualStyleBackColor = true;
+            this.btnAppMail.Click += new System.EventHandler(this.btnAppMail_Click);
             // 
             // Menu
             // 

@@ -33,5 +33,11 @@ namespace lab_5_nt106
             Form b2 = new RECIEVE();
             b2.Show();
         }
+
+        private void btnAppMail_Click(object sender, EventArgs e)
+        {
+            Form b3 = new AppMail();
+            b3.Show();
+        }
     }
 }
