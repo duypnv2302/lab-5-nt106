@@ -30,12 +30,12 @@
         {
             this.lbPass = new System.Windows.Forms.Label();
             this.lbEmail = new System.Windows.Forms.Label();
-            this.txtPass = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtEmail = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.btnLogin = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.lbTotal = new System.Windows.Forms.Label();
             this.lbRecent = new System.Windows.Forms.Label();
             this.listShow = new System.Windows.Forms.ListView();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbPass
@@ -59,33 +59,6 @@
             this.lbEmail.Size = new System.Drawing.Size(52, 20);
             this.lbEmail.TabIndex = 8;
             this.lbEmail.Text = "Email:";
-            // 
-            // txtPass
-            // 
-            this.txtPass.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPass.Location = new System.Drawing.Point(121, 80);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(247, 23);
-            this.txtPass.TabIndex = 4;
-            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmail.Location = new System.Drawing.Point(121, 51);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(247, 23);
-            this.txtEmail.TabIndex = 5;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLogin.Location = new System.Drawing.Point(482, 55);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(131, 48);
-            this.btnLogin.TabIndex = 9;
-            this.btnLogin.Values.Text = "LOGIN";
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // lbTotal
             // 
@@ -120,19 +93,44 @@
             this.listShow.TabIndex = 12;
             this.listShow.UseCompatibleStateImageBehavior = false;
             // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(443, 50);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(146, 53);
+            this.btnLogin.TabIndex = 14;
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(121, 50);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(247, 20);
+            this.txtEmail.TabIndex = 15;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
+            // 
+            // txtPass
+            // 
+            this.txtPass.Location = new System.Drawing.Point(121, 82);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(247, 20);
+            this.txtPass.TabIndex = 15;
+            // 
             // RECIEVE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(651, 458);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.listShow);
             this.Controls.Add(this.lbRecent);
             this.Controls.Add(this.lbTotal);
-            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lbPass);
             this.Controls.Add(this.lbEmail);
-            this.Controls.Add(this.txtPass);
-            this.Controls.Add(this.txtEmail);
             this.Name = "RECIEVE";
             this.Text = "RECIEVE";
             this.Load += new System.EventHandler(this.RECIEVE_Load);
@@ -145,11 +143,11 @@
 
         private System.Windows.Forms.Label lbPass;
         private System.Windows.Forms.Label lbEmail;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtPass;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtEmail;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnLogin;
         private System.Windows.Forms.Label lbTotal;
         private System.Windows.Forms.Label lbRecent;
         private System.Windows.Forms.ListView listShow;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPass;
     }
 }

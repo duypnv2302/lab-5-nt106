@@ -74,12 +74,15 @@ namespace lab_5_nt106
 
         }
 
-        private void txtShow_TextChanged(object sender, EventArgs e)
+
+
+
+        private void txtPass_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click_1(object sender, EventArgs e)
         {
             if (txtEmail.Text == string.Empty && txtPass.Text == string.Empty)
             {
@@ -93,7 +96,7 @@ namespace lab_5_nt106
             {
                 MessageBox.Show("Điền password!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else 
+            else
             {
                 if ((txtEmail.Text == "duyphan@nhom02.nt106" || txtEmail.Text == "phongkhuu@nhom2.nt106" || txtEmail.Text == "tienvi@nhom2.nt106" || txtEmail.Text == "anhnguyen@nhom2.nt106")
                     && txtPass.Text == "Hello12345!")
@@ -111,7 +114,7 @@ namespace lab_5_nt106
             }
         }
 
-        private void txtPass_TextChanged(object sender, EventArgs e)
+        private void txtEmail_TextChanged(object sender, EventArgs e)
         {
 
         }

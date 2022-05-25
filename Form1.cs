@@ -61,8 +61,17 @@ namespace lab_5_nt106
 
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
-        private void kryptonButton1_Click(object sender, EventArgs e)
+        }
+
+        private void kryptonRichTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
         {
             if (txtEmailFrom.Text == string.Empty || txtEmailTo.Text == string.Empty)
             {
@@ -88,22 +97,17 @@ namespace lab_5_nt106
                             return;
                         }
                     }
-                
+
                 }
-                 else
-                    {
-                        MessageBox.Show("Địa chỉ Email không tồn tại!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return;
+                else
+                {
+                    MessageBox.Show("Địa chỉ Email không tồn tại!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); return;
                 }
-               
+
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kryptonRichTextBox1_TextChanged(object sender, EventArgs e)
+        private void txtEmailFrom_TextChanged(object sender, EventArgs e)
         {
 
         }

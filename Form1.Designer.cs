@@ -28,50 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSend = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.txtEmailFrom = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtEmailTo = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtPass = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lbFrom = new System.Windows.Forms.Label();
             this.lbTo = new System.Windows.Forms.Label();
             this.lbPass = new System.Windows.Forms.Label();
             this.lbSubject = new System.Windows.Forms.Label();
-            this.txtSubject = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lbBody = new System.Windows.Forms.Label();
-            this.txtBody = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
+            this.btnSend = new System.Windows.Forms.Button();
+            this.txtEmailFrom = new System.Windows.Forms.TextBox();
+            this.txtEmailTo = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.txtSubject = new System.Windows.Forms.TextBox();
+            this.txtBody = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
-            // 
-            // btnSend
-            // 
-            this.btnSend.Location = new System.Drawing.Point(23, 92);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(90, 58);
-            this.btnSend.TabIndex = 0;
-            this.btnSend.Values.Text = "SEND";
-            this.btnSend.Click += new System.EventHandler(this.kryptonButton1_Click);
-            // 
-            // txtEmailFrom
-            // 
-            this.txtEmailFrom.Location = new System.Drawing.Point(200, 98);
-            this.txtEmailFrom.Name = "txtEmailFrom";
-            this.txtEmailFrom.Size = new System.Drawing.Size(247, 23);
-            this.txtEmailFrom.TabIndex = 1;
-            // 
-            // txtEmailTo
-            // 
-            this.txtEmailTo.Location = new System.Drawing.Point(200, 127);
-            this.txtEmailTo.Name = "txtEmailTo";
-            this.txtEmailTo.Size = new System.Drawing.Size(247, 23);
-            this.txtEmailTo.TabIndex = 1;
-            // 
-            // txtPass
-            // 
-            this.txtPass.Location = new System.Drawing.Point(573, 98);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(142, 23);
-            this.txtPass.TabIndex = 1;
             // 
             // lbFrom
             // 
@@ -114,13 +83,6 @@
             this.lbSubject.Text = "Subject";
             this.lbSubject.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtSubject
-            // 
-            this.txtSubject.Location = new System.Drawing.Point(126, 181);
-            this.txtSubject.Name = "txtSubject";
-            this.txtSubject.Size = new System.Drawing.Size(247, 23);
-            this.txtSubject.TabIndex = 1;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -141,15 +103,51 @@
             this.lbBody.Text = "Body";
             this.lbBody.Click += new System.EventHandler(this.label1_Click);
             // 
+            // btnSend
+            // 
+            this.btnSend.Location = new System.Drawing.Point(16, 78);
+            this.btnSend.Name = "btnSend";
+            this.btnSend.Size = new System.Drawing.Size(105, 69);
+            this.btnSend.TabIndex = 4;
+            this.btnSend.Text = "SEND";
+            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            // 
+            // txtEmailFrom
+            // 
+            this.txtEmailFrom.Location = new System.Drawing.Point(200, 101);
+            this.txtEmailFrom.Name = "txtEmailFrom";
+            this.txtEmailFrom.Size = new System.Drawing.Size(247, 20);
+            this.txtEmailFrom.TabIndex = 5;
+            // 
+            // txtEmailTo
+            // 
+            this.txtEmailTo.Location = new System.Drawing.Point(200, 127);
+            this.txtEmailTo.Name = "txtEmailTo";
+            this.txtEmailTo.Size = new System.Drawing.Size(247, 20);
+            this.txtEmailTo.TabIndex = 5;
+            // 
+            // txtPass
+            // 
+            this.txtPass.Location = new System.Drawing.Point(582, 103);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(142, 20);
+            this.txtPass.TabIndex = 5;
+            // 
+            // txtSubject
+            // 
+            this.txtSubject.Location = new System.Drawing.Point(142, 183);
+            this.txtSubject.Name = "txtSubject";
+            this.txtSubject.Size = new System.Drawing.Size(247, 20);
+            this.txtSubject.TabIndex = 5;
+            // 
             // txtBody
             // 
-            this.txtBody.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBody.Location = new System.Drawing.Point(34, 260);
+            this.txtBody.Location = new System.Drawing.Point(84, 257);
             this.txtBody.Name = "txtBody";
-            this.txtBody.Size = new System.Drawing.Size(681, 161);
-            this.txtBody.TabIndex = 3;
+            this.txtBody.Size = new System.Drawing.Size(602, 181);
+            this.txtBody.TabIndex = 6;
             this.txtBody.Text = "";
-            this.txtBody.TextChanged += new System.EventHandler(this.kryptonRichTextBox1_TextChanged);
             // 
             // SEND
             // 
@@ -157,17 +155,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 450);
             this.Controls.Add(this.txtBody);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtSubject);
+            this.Controls.Add(this.txtEmailTo);
+            this.Controls.Add(this.txtEmailFrom);
+            this.Controls.Add(this.btnSend);
             this.Controls.Add(this.lbTo);
             this.Controls.Add(this.lbPass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbBody);
             this.Controls.Add(this.lbSubject);
             this.Controls.Add(this.lbFrom);
-            this.Controls.Add(this.txtPass);
-            this.Controls.Add(this.txtSubject);
-            this.Controls.Add(this.txtEmailTo);
-            this.Controls.Add(this.txtEmailFrom);
-            this.Controls.Add(this.btnSend);
             this.Name = "SEND";
             this.Text = "SEND";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -177,19 +175,18 @@
         }
 
         #endregion
-
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnSend;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtEmailFrom;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtEmailTo;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtPass;
         private System.Windows.Forms.Label lbFrom;
         private System.Windows.Forms.Label lbTo;
         private System.Windows.Forms.Label lbPass;
         private System.Windows.Forms.Label lbSubject;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtSubject;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbBody;
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtBody;
+        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.TextBox txtEmailFrom;
+        private System.Windows.Forms.TextBox txtEmailTo;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.TextBox txtSubject;
+        private System.Windows.Forms.RichTextBox txtBody;
     }
 }
 
