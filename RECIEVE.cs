@@ -81,7 +81,11 @@ namespace lab_5_nt106
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtEmail.Text == string.Empty)
+            if (txtEmail.Text == string.Empty && txtPass.Text == string.Empty)
+            {
+                MessageBox.Show("Điền user và password!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (txtEmail.Text == string.Empty)
             {
                 MessageBox.Show("Điền user!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
